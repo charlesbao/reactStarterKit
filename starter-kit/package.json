@@ -1,0 +1,29 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "main": "app.js",
+  "author": "CharlesBAO",
+  "description": "The react starterKit",
+  "scripts":{
+    "start": "watchify -o js/bundle.js -v -d js/app.js",
+    "build": "watchify js/app.js -o 'uglifyjs -cm > js/bundle.min.js'"
+  },
+  "dependencies":{
+    "react": "*",
+    "react-dom": "*",
+    "pubsub-js": "*"
+  },
+  "devDependencies":{
+    "uglify-js": "*",
+    "browserify": "*",
+    "reactify": "*",
+    "babel": "^5.8.25",
+    "babelify": "*",
+    "babel-preset-react": "*"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}

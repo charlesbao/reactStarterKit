@@ -1,0 +1,5 @@
+//global Store
+
+module.exports = {
+
+};
