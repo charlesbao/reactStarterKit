@@ -6,7 +6,7 @@
   "description": "The react starterKit",
   "scripts":{
     "start": "watchify -o js/bundle.js -v -d js/app.js",
-    "build": "watchify js/app.js -o 'uglifyjs -cm > js/bundle.min.js'"
+    "build": "watchify js/app.js -o 'uglifyjs -cm > asset/js/bundle.min.js'"
   },
   "dependencies":{
     "react": "*",
